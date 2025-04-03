@@ -1,0 +1,39 @@
+nav {
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+
+  & .logo {
+    width: 6.25rem;
+  }
+
+
+  & a {
+    font: var(--fw-bold) var(--fs-md)/140% var(--ff-archivo);
+    gap: .5rem;
+  }
+
+}
+
+.sumary {
+  justify-content: space-between;
+
+  & a {
+    font: var(--fw-semibold) var(--fs-sm)/145%;
+    color:var(--text-color-secondary);
+  }
+
+}
+
+
+
+@media (width >= 80em) {
+  .logo {
+    width: 10rem;
+  }
+
+  nav {
+    padding-block: 1.625rem;
+  }
+
+}
