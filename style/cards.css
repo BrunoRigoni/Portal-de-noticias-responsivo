@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+
+  .description {
+    position: absolute;
+    
+  }
+
+}
