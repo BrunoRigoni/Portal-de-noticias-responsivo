@@ -1,0 +1,18 @@
+.ads {
+
+& img {
+  border-radius: .25rem;
+  max-width: 30.5;
+  max-height: 100%;
+}
+}
+
+@media (width >= 80em) {
+  & .ads {
+    & img {
+      max-width: 100%;
+      max-height: 17.5;
+    }
+
+  }
+}
