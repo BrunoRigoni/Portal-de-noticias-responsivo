@@ -29,6 +29,20 @@ nav {
 
 }
 
+.heading {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .75rem;
+  border-top: 1px solid var(--stroke-color);
+  margin-bottom: 1.5rem;
+
+  & a:nth-child(2) {
+    gap: .25rem;
+    font: var(--fw-semibold) var(--fs-sm)/145% var(--ff-archivo);
+  }
+}
+
 
 
 @media (width >= 80em) {

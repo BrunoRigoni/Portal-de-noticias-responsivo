@@ -12,6 +12,7 @@
 
   & .first-card {
     font: var(--fw-bold) var(--fs-xl)/135% var(--ff-archivo);
+    max-height: 6rem;
 
 
   }
@@ -25,6 +26,8 @@
     padding: .25rem .5rem;
     border-radius: .25rem;
   }
+
+
 
 
 }
@@ -57,6 +60,8 @@
     gap: .5rem;
 
 
+
+
     & .content-tag {
       padding: 2rem;
       max-width: max-content;
@@ -76,6 +81,50 @@
 
   }
 }
+
+
+
+.weekly-cards {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 1.5rem ;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: .5rem;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: transparent;
+    }
+
+    & figcaption {
+      top: 0;
+      left: 0;
+      padding: .5rem;
+
+    
+    }
+  }
+
+  & .content-tag {
+    font-size: var(--fs-xsm);
+  }
+
+  & .news {
+    width: 100%;
+    font: var(--fw-bold) var(--fs-md)/140% var(--ff-archivo);
+    overflow: hidden  ;
+    margin-block-end: auto;
+
+  }
+}
+
 
 
 @media (width >=80em) {
@@ -107,6 +156,19 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
+  }
+
+  .weekly-cards {
+    grid-template-columns: repeat(4, 1fr);
+
+    & .card {
+      & img {
+        max-width: 100%;
+        max-height:10rem;
+        object-fit: cover;
+      }
+    }
+
   }
 
 }
