@@ -32,15 +32,17 @@
   --fs-xl: 1.5rem;
 
   --fw-normal: 400;
-  --fw-semibold: 600; 
-  --fw-bold: 800; 
+  --fw-semibold: 600;
+  --fw-bold: 800;
 
   --px-base: 1rem;
 }
+
 html {
   font-family: var(--ff-archivo);
   color: var(--text-color-primary);
 }
+
 body {
   background-color: var(--bg-color);
 }
@@ -71,7 +73,7 @@ img {
 }
 
 .icon-hover:hover path {
-fill: var(--brand-color-light);
+  fill: var(--brand-color-light);
 }
 
 .h2-overflow {
@@ -79,7 +81,7 @@ fill: var(--brand-color-light);
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
@@ -92,6 +94,7 @@ fill: var(--brand-color-light);
 .desktop-only {
   display: none;
 }
+
 .gap1rem {
   gap: 1rem;
 }
@@ -100,7 +103,7 @@ fill: var(--brand-color-light);
   margin-top: 2rem;
 }
 
-@media (width >= 80em) {
+@media (width >=80em) {
   .container {
     --px-base: 2rem;
 

@@ -24,7 +24,7 @@ nav {
 
   & a {
     font: var(--fw-semibold) var(--fs-sm)/145%;
-    color:var(--text-color-secondary);
+    color: var(--text-color-secondary);
   }
 
 }
@@ -35,7 +35,7 @@ nav {
   justify-content: space-between;
   padding-top: .75rem;
   border-top: 1px solid var(--stroke-color);
-  margin-bottom: 1.5rem;
+  margin-block: 2rem 1.5rem;
 
   & a:nth-child(2) {
     gap: .25rem;
@@ -45,9 +45,12 @@ nav {
 
 
 
-@media (width >= 80em) {
+@media (width >=80em) {
   .logo {
     width: 10rem;
   }
 
+  .heading {
+    margin-block: 5rem 1.5rem;
+  }
 }
