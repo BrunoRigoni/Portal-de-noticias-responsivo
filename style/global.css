@@ -25,6 +25,7 @@
 
   --ff-archivo: "Archivo", sans-serif;
 
+  --fs-xsm: 0.625rem;
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-xl: 1.5rem;
@@ -67,6 +68,10 @@ img {
   display: flex;
 }
 
+
+
+
+
 .align-center {
   display: flex;
   align-items: center;
@@ -74,6 +79,9 @@ img {
 
 .desktop-only {
   display: none;
+}
+.gap1rem {
+  gap: 1rem;
 }
 
 @media (width >= 80em) {
@@ -87,7 +95,15 @@ img {
     display: initial;
   }
 
+  .grid-flow-col {
+    display: grid;
+    grid-auto-flow: column;
+  }
 
+  .grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 
 }

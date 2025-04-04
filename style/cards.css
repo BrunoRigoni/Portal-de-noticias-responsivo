@@ -1,9 +1,112 @@
+#highlights {
+  display: grid;
+  gap: 1rem;
+}
+
+#main-card {
+  & img {
+    object-fit: cover;
+    min-height: 26rem;
+    align-self: stretch;
+  }
+
+  & .first-card {
+    font: var(--fw-bold) var(--fs-xl)/135% var(--ff-archivo);
+
+
+  }
+
+  & .content-tag {
+    padding: 2rem;
+    max-width: max-content;
+    text-transform: uppercase;
+    letter-spacing: .04rem;
+    background-color: var(--brand-color-dark);
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+  }
+
+
+}
+
 .card {
   position: relative;
+  overflow: hidden;
+  border-radius: .25rem;
 
-  .description {
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: "";
     position: absolute;
+    inset: 0;
+    top: 50%;
+    background: linear-gradient(180deg, transparent 0%, #020617 100%);
+  }
+
+  & figcaption {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+
+    & .content-tag {
+      padding: 2rem;
+      max-width: max-content;
+      text-transform: uppercase;
+      letter-spacing: .04rem;
+      font-size: var(--fs-xsm);
+      background-color: var(--brand-color-dark);
+      padding: .25rem .5rem;
+      border-radius: .25rem;
+    }
+
+    & .first-card {
+      font: var(--fw-bold) var(--fs-xl)/135% var(--ff-archivo);
+
+
+    }
+
+  }
+}
+
+
+@media (width >=80em) {
+
+
+  #highlights {
+    gap: 1rem;
+  }
+
+
+  #main-card {
     
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    & figcaption {
+      padding: 1.5rem;
+
+    }
+  }
+
+  & figcaption {
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
   }
 
 }

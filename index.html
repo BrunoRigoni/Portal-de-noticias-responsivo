@@ -11,48 +11,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/index.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <title>Portal de notícias</title>
 </head>
+
 <body>
-    <nav id="initial" class="container flex">
-      <a class="align-center" href="#">
-        <img src="./assets/icons/List.svg" alt="">
-        <span class="desktop-only">menu</span>
-      </a>
+  <nav id="initial" class="container flex">
+    <a class="align-center" href="#">
+      <img src="./assets/icons/List.svg" alt="">
+      <span class="desktop-only">menu</span>
+    </a>
 
-      <a href="#initial">
-        <img class="logo" src="./assets/icons/logo.svg" alt="">
-      </a>
+    <a href="#initial">
+      <img class="logo flex" src="./assets/icons/logo.svg" alt="">
+    </a>
 
-      <a class="align-center" href="#">
-        <span class="desktop-only">Buscar</span>
-        <img src="./assets/icons/MagnifyingGlass.svg" alt="">
-      </a>
-    </nav>
-    <nav id="sumary">
-      <div class="sumary container flex">
-        <a href="#" >Inteligência Artificial</a>
-        <a href="#" >Blockchain</a>
-        <a href="#">Hologramas</a>
-        <a href="#" class="desktop-only">Internet</a>  
-        <a href="#" class="desktop-only">Vestíveis</a>  
-        <a href="#" class="desktop-only">Vestíveis</a>
-        <a href="#" class="desktop-only">Realidade Aumentada</a>  
-        <a href="#" class="desktop-only">Realidade Virtual</a>  
-      </div>
-    </nav>
+    <a class="align-center" href="#">
+      <span class="desktop-only">Buscar</span>
+      <img src="./assets/icons/MagnifyingGlass.svg" alt="">
+    </a>
+  </nav>
+  <nav class="sumary container flex">
 
-    <section id="highlights">
-      <div class="card">
-        <img src="./assets/images/Image 01.png" alt="">
-        <div class="description">
-          <span>Robótica</span>
-          <h2>Robôs domésticos começam a ser adotados para tarefas...</h2>
-        </div>
-      </div>
-    </section>
+    <a href="#">Inteligência Artificial</a>
+    <a href="#">Blockchain</a>
+    <a href="#">Hologramas</a>
+    <a href="#" class="desktop-only">Internet</a>
+    <a href="#" class="desktop-only">Vestíveis</a>
+    <a href="#" class="desktop-only">Vestíveis</a>
+    <a href="#" class="desktop-only">Realidade Aumentada</a>
+    <a href="#" class="desktop-only">Realidade Virtual</a>
+
+  </nav>
+
+  <section id="highlights" class="container grid grid-flow-col">
+
+    <figure class="card grid grid-flow-col" id="main-card">
+      <img src="./assets/images/Image 01.png" alt="">
+      <figcaption>
+        <span class="content-tag">robótica</span>
+        <h2 class="first-card">Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e
+          eficiência nas
+          residências.
+        </h2>
+      </figcaption>
+    </figure>
+
+    <div id="highlights" class="gap-1rem grid-col-2">
+      <figure class="card" id="second-card">
+        <img src="./assets/images/Image 02.png" alt="">
+        <figcaption>
+          <span class="content-tag">Hologramas</span>
+          <h2>
+            Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!
+          </h2>
+        </figcaption>
+      </figure>
+
+      <figure class="card" id="third-card">
+        <img src="./assets/images/Image 03.png" alt="">
+        <figcaption>
+          <span class="content-tag">Internet</span>
+          <h2>
+            Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos
+            comunicamos.
+          </h2>
+        </figcaption>
+      </figure>
+
+      <figure class="card" id="fourth-card">
+        <img src="./assets/images/Image 04.png" alt="">
+        <figcaption>
+          <span class="content-tag">Vestíveis</span>
+          <h2>
+            Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o
+            bem-estar pessoal.
+          </h2>
+        </figcaption>
+      </figure>
+
+      <figure class="card" id="fifth-card">
+        <img src="./assets/images/Image 05.png" alt="">
+        <figcaption>
+          <span class="content-tag">Realidade Virtual</span>
+          <h2>
+            Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem
+            tradicional.
+          </h2>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="weekly">
+    <div class="container flex">
+      <span>Mais lidos da semana</span>
+      <span>Ver tudo <img src="./assets/icons/ArrowRight.svg" alt=""></span>
+    </div>
+  </section>
 </body>
 
 </html>

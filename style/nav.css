@@ -5,6 +5,7 @@ nav {
 
   & .logo {
     width: 6.25rem;
+    align-items: center;
   }
 
 
@@ -17,6 +18,9 @@ nav {
 
 .sumary {
   justify-content: space-between;
+  border-block: 1px solid var(--stroke-color);
+  padding: .875rem;
+  margin-block: 0 2.5rem;
 
   & a {
     font: var(--fw-semibold) var(--fs-sm)/145%;
@@ -30,10 +34,6 @@ nav {
 @media (width >= 80em) {
   .logo {
     width: 10rem;
-  }
-
-  nav {
-    padding-block: 1.625rem;
   }
 
 }
