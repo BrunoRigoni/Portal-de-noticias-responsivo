@@ -103,6 +103,10 @@ img {
   margin-top: 2rem;
 }
 
+#more-section {
+  margin-bottom: 5rem;
+}
+
 @media (width >=80em) {
   .container {
     --px-base: 2rem;
